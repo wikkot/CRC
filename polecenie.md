@@ -1,3 +1,6 @@
+Pliki z dziurami
+--------------------
+
 Pliki w Linuksie mogą być dziurawe. Na potrzeby tego zadania przyjmujemy, że plik z dziurami składa się z ciągłych fragmentów. Na początku fragmentu jest dwubajtowa długość w bajtach danych we fragmencie. Potem są dane. Fragment kończy się czterobajtowym przesunięciem, które mówi, o ile bajtów trzeba się przesunąć od końca tego fragmentu do początku następnego fragmentu. Długość danych w bloku jest 16-bitową liczbą w naturalnym kodzie binarnym. Przesunięcie jest 32-bitową liczbą w kodowaniu uzupełnieniowym do dwójki. Liczby w pliku zapisane są w porządku cienkokońcówkowym (ang. _little-endian_). Pierwszy fragment zaczyna się na początku pliku. Ostatni fragment rozpoznaje się po tym, że jego przesunięcie wskazuje na niego samego. Fragmenty w pliku mogą się stykać i nakładać.
 
 Suma kontrolna pliku
